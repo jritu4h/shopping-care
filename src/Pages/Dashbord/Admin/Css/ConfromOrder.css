@@ -1,0 +1,37 @@
+
+
+  /* For screens with a maximum width of 1024px (tablets) */
+  @media (max-width: 1024px) {
+    .table {
+      font-size: 14px;
+      /* Adjust other styles for tablets here */
+    }
+    /* Add more tablet-specific styles as needed */
+  }
+
+  /* For screens with a maximum width of 640px (mobile devices) */
+  @media (max-width: 640px) {
+    .table {
+      font-size: 12px;
+      /* Adjust other styles for mobile devices here */
+    }
+    /* Add more mobile-specific styles as needed */
+  }
+
+  /* Example: Adjust column widths for smaller screens */
+  @media (max-width: 480px) {
+    .table th:nth-child(1),
+    .table td:nth-child(1) {
+      /* Style adjustments for the first column on smaller screens */
+      width: 30%;
+    }
+
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+      /* Style adjustments for the second column on smaller screens */
+      width: 20%;
+    }
+
+    /* Add more column-specific adjustments as needed */
+  }
+

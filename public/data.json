@@ -1,0 +1,96 @@
+[
+    {
+        "product_name": "Almond Crunch Cereal",
+        "price": 85,
+        "image": "https://i.ibb.co/9bRDjBh/organic-almonds-background-1.jpg",
+        "category": "Almond",
+        "stock":"stock in"
+      },
+      {
+        "product_name": "Roasted Almond Butter",
+        "price": 85,
+        "image": "https://i.ibb.co/rG2d6N6/organic-walnuts-background.jpg",
+        "category": "Almond",
+        "stock":"stock in"
+      },
+      {
+        "product_name": "Honey-Glazed Almonds",
+        "price": 85,
+        "image": "https://i.ibb.co/X30CdFy/tasty-cashew-nuts-as-background.jpg",
+        "category": "Almond",
+        "stock":"stock in"
+      },
+      {
+        "product_name": "Almond Milk (1 Quart)",
+        "price": 85,
+        "image": "https://i.ibb.co/X30CdFy/tasty-cashew-nuts-as-background.jpg",
+        "category": "Almond",
+        "stock":"stock in"
+      },
+      {
+        "product_name": "Almond Granola Bars (Pack of 6)",
+        "price": 85,
+        "image": "https://i.ibb.co/X30CdFy/tasty-cashew-nuts-as-background.jpg",
+        "category": "Almond",
+        "stock":"stock in"
+      },
+       
+      {
+        "product_name": "Almond Milk (1 Quart)",
+        "price": 85,
+        "image": "https://i.ibb.co/X30CdFy/tasty-cashew-nuts-as-background.jpg",
+        "category": "Almond",
+        "stock":"stock in"
+      },
+      {
+        "product_name": "Moblie charger",
+        "price": 1000,
+        "image": "https://i.ibb.co/xzsy4PR/usb-charger-boxes-1.jpg",
+         "category": "electronics",
+         "stock":"stock in"
+      },
+      {
+        "product_name": "Werless Head Phone",
+        "price": 600,
+        "image": "https://i.ibb.co/Tgwpksm/Belkin-Soundform-True-Wireless-Earbuds-AUC001-BTBK-1.jpg",
+         "category": "electronics",
+         "stock":"stock in"
+      },
+      {
+        "product_name": "Mobile Stand",
+        "price": 200,
+        "image": "https://i.ibb.co/hsM32G6/aluminum-adjustable-mobile-phone-stand.png",
+         "category": "electronics",
+         "stock":"stock in"
+      },
+      {
+        "product_name": "Video Camera",
+        "price": 70000,
+        "image": "https://i.ibb.co/zZ2gN2D/sj4000-air-01-228x228.jpg",
+         "category": "electronics",
+         "stock":"stock in"
+      },
+      {
+        "product_name": "New Model Hero Camera",
+        "price": 20000,
+        "image": "https://i.ibb.co/KLm40DP/hero-9-05-228x228.jpg",
+         "category": "electronics",
+         "stock":"stock in"
+      },
+
+        
+      {
+        "product_name": "Classic White Shirt",
+        "price": 29.99,
+        "image": "https://i.ibb.co/9yCq3ZL/images.jpg",
+        "category":"feson",
+        "stock":"stock in"
+      },
+      {
+        "product_name": "Casual Blue Shirt",
+        "price": 24.99,
+        "image": "https://i.ibb.co/4mzTqYX/images-3.jpg",
+        "category":"feson",
+        "stock":"stock in"
+      }
+]
