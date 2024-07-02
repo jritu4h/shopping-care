@@ -27,6 +27,7 @@ import Fashion from "../Pages/Catagory/CatagorySection/Fashion";
 import Electronics from "../Pages/Catagory/CatagorySection/Electronics";
 import ITProducts from "../Pages/Catagory/CatagorySection/ITProducts";
 import Cooking from "../Pages/Catagory/CatagorySection/Cooking";
+import About from "../Pages/About/About";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
         {
           path: "/allproducts",
@@ -65,7 +70,7 @@ export const router = createBrowserRouter([
         {
           path: "/products/:id",
           element: <Order />,
-          loader:({params})=> fetch(`https://lazy-cyan-donkey-veil.cyclic.app/products/${params.id}`)
+          loader:({params})=> fetch(`https://tawsif-shop-server.vercel.app/products/${params.id}`)
         },
         {
           path: "/login",
@@ -75,7 +80,7 @@ export const router = createBrowserRouter([
       ],
     },
     {
-      path:'dashbord',
+      path:'dashboard',
       element:<Private><DashBord></DashBord></Private>,
       children:[
         {
@@ -126,17 +131,17 @@ export const router = createBrowserRouter([
         {
           path:"detilsReview/:id",
           element:<AdminPrivate><DetilsReview></DetilsReview></AdminPrivate>,
-          loader:({params})=>fetch(`http://localhost:3000/admincontrollreview/${params.id}`)
+          loader:({params})=>fetch(`https://tawsif-shop-server.vercel.app/admincontrollreview/${params.id}`)
         },
         {
           path:'fulldetails/:id',
           element:<FullOrderdetils></FullOrderdetils>,
-          loader:({params})=>fetch(`https://lazy-cyan-donkey-veil.cyclic.app/storeOrder/${params.id}`)
+          loader:({params})=>fetch(`https://tawsif-shop-server.vercel.app/storeOrder/${params.id}`)
         },
         {
           path:'update/:id',
           element:<UpdateProducts></UpdateProducts>,
-          loader:({params})=>fetch(`https://lazy-cyan-donkey-veil.cyclic.app/products/${params.id}`)
+          loader:({params})=>fetch(`https://tawsif-shop-server.vercel.app/products/${params.id}`)
         }
       ]
     }

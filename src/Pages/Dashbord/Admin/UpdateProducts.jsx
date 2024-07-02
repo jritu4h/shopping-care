@@ -38,7 +38,7 @@ const onSubmit = (data) => {
             },
           };
   
-          axios.patch(`https://lazy-cyan-donkey-veil.cyclic.app/products/${UpdateData._id}`, products)
+          axios.patch(`https://tawsif-shop-server.vercel.app/products/${UpdateData._id}`, products)
             .then((response) => {
               if (response.data.insertedId) {
                 Swal.fire('Added!', 'Successful!', 'success');

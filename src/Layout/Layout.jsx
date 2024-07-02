@@ -18,7 +18,9 @@ const Layout = () => {
             {
                 loading?<Loading></Loading>:<div>
                 {noHeaderFooter|| <Header></Header>}
+                 <div className='min-h-screen'>
                  <Outlet></Outlet>
+                 </div>
                  {noHeaderFooter||<Footer></Footer>}
              </div>
             }

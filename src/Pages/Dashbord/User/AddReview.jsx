@@ -15,7 +15,7 @@ const AddReview = () => {
       photo:user.photoURL,
       email:user.email
     }
-    axios.post('https://lazy-cyan-donkey-veil.cyclic.app/review',FullReview)
+    axios.post('https://tawsif-shop-server.vercel.app/review',FullReview)
     .then(res=>{
       console.log(res.data)
       if (res.data.insertedId) {

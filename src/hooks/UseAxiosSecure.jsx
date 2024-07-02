@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const axiosSecure = axios.create({
-    baseURL: 'https://lazy-cyan-donkey-veil.cyclic.app', 
+    baseURL: 'https://tawsif-shop-server.vercel.app', 
   });
   
 const UseAxiosSecure = () => {

@@ -72,7 +72,7 @@ const Order = () => {
 
     }
     console.log(newOrder)
-    axios.post('https://lazy-cyan-donkey-veil.cyclic.app/order', newOrder)
+    axios.post('https://tawsif-shop-server.vercel.app/order', newOrder)
     .then(data => {
       console.log(data.data)
 

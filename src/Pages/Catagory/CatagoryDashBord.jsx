@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const CatagoryDashBord = () => {
     return (
@@ -9,7 +9,7 @@ const CatagoryDashBord = () => {
             <div className="drawer lg:drawer-open sticky">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content pt-16">
-                    <label htmlFor="my-drawer-2" className="btn  drawer-button lg:hidden"><FontAwesomeIcon icon={faBars} /></label>
+                    <label htmlFor="my-drawer-2" className="btn  drawer-button lg:hidden">-</label>
                     <Outlet></Outlet>
 
                 </div>
@@ -22,6 +22,7 @@ const CatagoryDashBord = () => {
                         <li><Link to='/category/it products'>It Products</Link></li>
                         <li> <Link to='/category/Cooking'>Cooking</Link></li>
                         <li>  <Link to='/'>Dray Foods</Link></li>
+                        <li>  <Link to='/'>Own Products</Link></li>
                         <li> <Link to='/'>Gift Packet</Link></li>
                     </ul>
 

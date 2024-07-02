@@ -20,27 +20,25 @@ const DashBord = () => {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-    <ul className="menu p-4 w-80 min-h-full  text-white font-semibold" style={{background:'radial-gradient(circle, rgba(252,187,21,1) 0%, rgba(255,211,8,1) 100%)'}}>
+    <ul className="menu p-4 w-[270px] min-h-full  text-white font-semibold bg-blue-300">
       {
         isAdmin? <>
                        <div className=' flex flex-col items-center pb-2'>
                        <img style={{borderRadius:"50%"}} src={user.photoURL} alt="" />
                        <h2 className=' text-3xl tetx-center'>{user.displayName}</h2>
                        </div>
-                            <li className=' uppercase'><Link to="/dashbord/adminhome"><FaHome></FaHome> Admin Panel</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/additem"> <FaUpload></FaUpload> Add an Item</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/manageitem"><FaStore></FaStore> Manage Items</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/manageorder"><FaBook></FaBook> Manage Bookings</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/store"><FaDatabase></FaDatabase>Order History</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/review"><FaDatabase></FaDatabase>Manage Review</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/user"><FaUsers></FaUsers> All Users</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/adminhome"><FaHome></FaHome> Admin Panel</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/additem"> <FaUpload></FaUpload> Add an Item</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/manageitem"><FaStore></FaStore> Manage Items</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/manageorder"><FaBook></FaBook> Manage Bookings</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/store"><FaDatabase></FaDatabase>Order History</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/user"><FaUsers></FaUsers> All Users</Link></li>
                             
                         </>:
                         <>
-                        <li className=' uppercase'><Link to="/dashbord/userhome"><FaHome></FaHome> User Home</Link></li>
-                            <li className=' uppercase'><Link to="/dashbord/addreview"> <FaUtensils></FaUtensils> Add an Review</Link></ li>
-                            <li className=' uppercase'><Link to="/dashbord/castomer"> <img width="18px" src={coustomer} alt="" /> Coustomer Service</Link></ li>
-                            <li className=' uppercase'><Link to="/dashbord/carts"><FaShoppingCart></FaShoppingCart>Cart</Link></li>
+                        <li className=' uppercase'><Link to="/dashboard/userhome"><FaHome></FaHome> User Home</Link></li>
+                            <li className=' uppercase'><Link to="/dashboard/castomer"> <img width="18px" src={coustomer} alt="" /> Coustomer Service</Link></ li>
+                            <li className=' uppercase'><Link to="/dashboard/carts"><FaShoppingCart></FaShoppingCart>Cart</Link></li>
                         </>
         
       }

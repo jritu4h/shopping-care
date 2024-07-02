@@ -15,11 +15,6 @@ const AdminPrivate = ({children}) => {
         return children
      }
      return <Navigate to="/" replace></Navigate>
-    return (
-        <div>
-            
-        </div>
-    );
 };
 
 export default AdminPrivate;

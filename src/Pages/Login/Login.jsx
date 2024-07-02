@@ -11,7 +11,7 @@ const Login = () => {
             const user = result.user;
             console.log(user)
             const saveUser = { name: user.displayName, email: user.email }
-           fetch('https://lazy-cyan-donkey-veil.cyclic.app/user',{
+           fetch('https://tawsif-shop-server.vercel.app/user',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

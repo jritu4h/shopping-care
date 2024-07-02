@@ -4,7 +4,7 @@ const SetDistric = () => {
     const {data:distric=[]}=useQuery({
         queryKey:["distric"],
         queryFn: async ()=>{
-            const res = await fetch('https://lazy-cyan-donkey-veil.cyclic.app/district')
+            const res = await fetch('https://tawsif-shop-server.vercel.app/district')
             return res.json()
         }
     })

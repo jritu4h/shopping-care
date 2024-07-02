@@ -22,7 +22,7 @@ const ManageItem = () => {
             'Your Order has been deleted.',
             'success'
           )
-          axios.delete(`https://lazy-cyan-donkey-veil.cyclic.app/products/${id}`)
+          axios.delete(`https://tawsif-shop-server.vercel.app/products/${id}`)
             .then(data => {
               console.log(data.data)
               refetch()

@@ -42,7 +42,7 @@ const Products = () => {
         </form>
       
      </div>
-         <div className=' mt-8 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+         <div className=' mt-8 grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 grid-cols-2  gap-5'>
             {
                 products.map(item => console.log(item))
             }

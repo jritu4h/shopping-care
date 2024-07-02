@@ -15,7 +15,7 @@ const ConfromOrder = () => {
   })
   const total = carts.reduce((sum, item) => item.price + sum, 0);
   const handelUpdate = (user) => {
-    axios.put(`https://lazy-cyan-donkey-veil.cyclic.app//confromorder/${user._id}`)
+    axios.put(`https://tawsif-shop-server.vercel.app/confromorder/${user._id}`)
       .then(res => {
         console.log(res.data)
         refetch()
@@ -33,7 +33,7 @@ const ConfromOrder = () => {
         category:user.category,
 
         }
-        axios.post('https://lazy-cyan-donkey-veil.cyclic.app/storeOrder',confrom)
+        axios.post('https://tawsif-shop-server.vercel.app/storeOrder',confrom)
         .then(data =>{
           console.log(data.data)
         })
@@ -42,7 +42,7 @@ const ConfromOrder = () => {
 
 
   const handelDelet = (id) => {
-    axios.delete(`https://lazy-cyan-donkey-veil.cyclic.app//confromorder/${id}`)
+    axios.delete(`https://tawsif-shop-server.vercel.app/confromorder/${id}`)
       .then(res => {
         console.log(res.data)
         refetch()

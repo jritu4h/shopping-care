@@ -28,7 +28,7 @@ const AuthProbider = ({children}) => {
             console.log(currentUser)
             setUser(currentUser)
            if (currentUser) {
-              axios.post('https://lazy-cyan-donkey-veil.cyclic.app/jwt',{email:currentUser.email})
+              axios.post('https://tawsif-shop-server.vercel.app/jwt',{email:currentUser.email})
               .then(data =>{
                 // console.log(data.data.token)
                 localStorage.setItem('access-token', data.data.token)

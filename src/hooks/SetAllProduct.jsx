@@ -5,7 +5,7 @@ const SetAllProduct = () => {
    const [products,setProduct]=useState([])
    const [loading,setLoding]=useState(true)
    useEffect(()=>{
-    fetch('https://lazy-cyan-donkey-veil.cyclic.app/products')
+    fetch('https://tawsif-shop-server.vercel.app/products')
     .then(res=>res.json())
     .then(data =>{
         setProduct(data)

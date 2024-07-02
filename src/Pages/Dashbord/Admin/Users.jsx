@@ -13,10 +13,12 @@ const Users = () => {
           return res.data;
       }
   })
+
+  console.log(user);
   
 
     const handelUser=(u)=>{
-      axios.patch(`https://lazy-cyan-donkey-veil.cyclic.app/user/admin/${u}`)
+      axios.patch(`https://tawsif-shop-server.vercel.app/user/admin/${u}`)
       .then(res => {
         console.log(res.data)
         refetch()
@@ -38,7 +40,7 @@ const Users = () => {
             'Your file has been deleted.',
             'success'
           )
-          axios.delete(`https://lazy-cyan-donkey-veil.cyclic.app/user/${u._id}`)
+          axios.delete(`https://tawsif-shop-server.vercel.app/user/${u._id}`)
           .then(res =>{
             console.log(res.data)
             refetch()
