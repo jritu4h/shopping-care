@@ -14,7 +14,7 @@ export default function App() {
       <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} />
       <select {...register("Title", { required: true })}>
         <option value="Mr">Mr</option>
-        <option value="Mrs">Mrs</option>
+        <option value="Mrs">Ms</option>
         <option value="Miss">Miss</option>
         <option value="Dr">Dr</option>
       </select>
